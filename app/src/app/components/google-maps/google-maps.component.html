@@ -1,0 +1,12 @@
+<div class="col-8">
+    <google-map height="100%"
+                width="100%"
+                [center]="center"
+                [zoom]="zoom"
+                [options]="mapOptions">
+        <map-marker *ngFor="let marker of markers"
+                [position]="marker.coords"
+                [options]="(marker.report_number == currentMarker) ? markerOptionsActive : markerOptions">
+        </map-marker>
+    </google-map>
+</div>

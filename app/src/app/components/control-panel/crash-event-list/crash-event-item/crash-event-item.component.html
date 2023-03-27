@@ -1,0 +1,12 @@
+<div [ngClass]="active ? 'item-container active' : 'item-container'" (click)="toggle()">
+    <div>
+        <h3>
+            <a>{{reportNum}}</a>
+        </h3>
+        <span>{{city}}, {{county}}</span>
+    </div>
+    <div>
+        <p>{{crashDate.split("T")[0]}}</p>
+        <p>{{crashTime.slice(0, -3)}}</p>
+    </div>
+</div>

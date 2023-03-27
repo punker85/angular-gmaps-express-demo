@@ -1,0 +1,15 @@
+div {
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    .row {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
